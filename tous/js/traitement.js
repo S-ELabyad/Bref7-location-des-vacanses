@@ -50,22 +50,4 @@ function age(){
 //
 
    
-    for(j=0;j<6;j++)
-    {
-        btn_reserve[j].disabled=true;
-    }
-    document.getElementsByClassName("btn_annuler")[i].style="display: inline";
-    
 }
-  
-  function annuler(i)
-  {
-    var btn_reserve=document.getElementsByClassName("button type2");
-    document.getElementsByClassName("btn_annuler")[i].style="display: none";
-    btn_reserve[i].style="display: inline";
-    for(j=0;j<6;j++)
-    {
-        btn_reserve[j].disabled=false;
-    }
-   
-  }

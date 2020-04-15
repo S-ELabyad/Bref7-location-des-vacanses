@@ -1,193 +1,201 @@
-<!DOCTYPE  >
-<html >
-  
-    <head>
-        <meta charset="UTF_8"/>
-        <link rel="stylesheet" href="../css/gallerie.css">
-        <title>HomeliDays</title>
-        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css">
-        <link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet">
-       
-       
+<!DOCTYPE>
+<html>
 
-      
-    </head>
-    <body onload="f_check_session()" >
-        <div id="header">
-        <div id="tete" style="background-color: gainsboro; width: 100%; height: 14%; position: absolute; ">
-        <div class="logo">
-            <a href="../html/gallerie.html"><img class="img" src="../image/logo.png"></a></div>
-            
-            <div class="nav" id="NJE_btn1" >
-                <ul>
-                    <li><a href="../html/gallerie.html">Connexion</a></li>
-                    <li><a href="../html/inscription.html">Carnet de Voyage</a></li>
-                   
-                   
-                </ul>
-            </div>
-             <div class="NJE_icon_menu" id="NJE_btn1"><i class="fas fa-bars"></i></div>
-            <div class="NJE_icon_menu1" id="NJE_btn2"><i class="fas fa-times"></i></div>
-           
-
-      
-
-        </div>
-        </div>
-
-
-        <div class="page2">
-                <h2 class="bienvenue">Bienvenue</h2>
-                <h4 class="sous-titre">Connectez-vous à l’Espace Propriétaire</h4>
-
-    
-    <div id="reservation" >   
-          
-
-                    <div class="input1">
-                      <div class="image"> <img src="../image/image.jfif"></div>
-                     <h2 class="inscrit">Inscription</h2>
-                      
-                     <input id="Text1" name="Text1" type="text" placeholder=" votre nom" oninput="validfirstname(0)">
-                     <input id="Text2" name="Text2" type="text" placeholder="votre prénom" oninput="validlastname(0)">
-                     <input id="ds" type="date" name="ds" placeholder="jj/mm/aa" oninput="validdate(0)">
-                   
-                     <li ><select name="Civilité" id="civil" name="civil" >  
-                            <option selected="" value="Default" >Civilité</option>  
-                            <option value="AF">Australia</option>  
-                            <option value="AL">Canada</option>  
-                            <option value="DZ">India</option>  
-                            <option value="AS">Russia</option>  
-                            <option value="AD">USA</option>  
-                            </select></li> 
-                     <input id="email1" name="email" type="email" placeholder=" votre email" oninput="validemail(1)">
-                     <input id="pasword1" name="pasword1" type="password" placeholder=" votre mot de passe" oninput="validpassword(1)">
-                     <!-- <input id="pasword2" name="pasword2" type="password" placeholder="confirmation du mot de passe"> -->
-
-                     <input id="submit" type="submit" value="Envoyer" onclick="inscription()">
-                     <p><a class="Connectez-vous" href="../html/connexion.html">Connectez-vous...</a></p>
-                        
-                    
-                      
-                      x
-                      
-                      
-                        </div>
-                    </div>
-                    <h2 class="parag">Découvrez Nos offres et forfait !!</h2>
-
-                    <div class="forfait">
-                      <div class="forfait1">
-                        <img class="photo" src="../image/forfait.jpg">
-                        <div class="middle">
-                          <div class="parag1"> <a
-                              href="https://www.sortiraparis.com/loisirs/guides/48559-saint-valentin-2020-a-paris-nos-bons-plans"
-                              target="_blank">Nos forfait du Saint Valention!</a></div>
-                
-                        </div>
-                
-                      </div>
-                      <div class="forfait2">
-                        <img class="photo1" src="../image/forfait1.jpg">
-                        <div class="middle1">
-                          <div class="parag2"> <a href="https://www.officiel-des-vacances.com/top-10-destinations-soleil-en-hiver"
-                              target="_blank">Nos forfait d'hiver au soleil!</a></div>
-                
-                        </div>
-                       </div>
-                
-                      <div class="forfait5">
-                        <img class="photo5" src="../image/13.jpg">
-                        <div class="middle5">
-                          <divc class="parag5"><a href="../html/inscription.html">Nos forfait pour reserver!</a></div>
-                        </div>
-                    </div>
+<head>
+  <meta charset="UTF_8" />
+  <link rel="stylesheet" href="../css/gallerie.css">
+  <title>HomeliDays</title>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css">
+  <link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet">
 
 
 
-                    <div class="forfait3">
-                      <img class="photo2" src="../image/forfait2.png">
-                      <div class="middle2">
-                        <div class="parag3"> <a href="" target="_blank">Nos forfait d'été 2020!</a></div>
-              
-                      </div>
-              
-                    </div>
-                    <div class="forfait4">
-                      <img class="photo3" src="../image/forfait4.jpg">
-                      <div class="middle3">
-                        <div class="parag4"> <a href="" target="_blank">Nos forfait du printemps!</a></div>
-                      </div>
-                    </div>
-              
-              
-                  <h3 class="offre">Offres Last Minute</h3>
-                  <h5 class="offre1">Toujours avec la garantie des meilleurs prix !</h5>
-                  <p class="offre2"> Chez Sunweb, vous trouverez toujours les meilleurs Last Minute au soleil !<br> Vous avez envie de
-                    chaleur et de vitamine D ? Il vous suffit de chercher votre Last Minute idéal et de réserver <br>un séjour
-                    comprenant le vol et l'hébergement. De plus, avec Sunweb, vous êtes assuré d'obtenir le prix le plus bas!<br> Vous
-                    trouvez vos vacances moins chères ailleurs ? Nous vous remboursons la différence et vous accordons une
-                    <br>réduction supplémentaire !
-                    <br>Vous savez déjà où vous voulez aller ? Ou vous voudriez être inspiré ? Découvrez tous nos<br> last minutes et
-                    trouvez vos vacances idéales.</p>
-                  <button class="btnred">Tous les last minutes</button>
-              
-              
-              
-                  <div class="forfait6">
-                      <img class="imagee" src="../image/12.jpg">
-                      <div class="overlay">Quelle est votre destination Last Minute ? </div>
-                
-                  </div>              
-        </div>
-                 
-       
-     
-    
 
-    <div id="footer">
-      <h2 class="txt">HomeliDays</h2>
-    
-      <div class="footer1">
-        <h2 class="txt2"> A propos</h2>
-        <p class="txt3"><a href="#">Qui somme nous!</a></p>
-        <p class="txt4"><a href="#">Offre d'emploi</a></p>
-        <p class="txt5"><a href="#">Géneral</a></p>
-     </div>
-    
-     <div class="footer1">
-         <h2 class="text">Aide</h2>
-         <p class="text2"><a href="#">Contactez</a></p>
-         <p class="text3"><a href="#">Confidentialité</a></p>
-         <p class="text4"><a href="#">Condition</a></p>
-    </div>
-    
-    <div class="footer1">
-        <h2 class="texte">Autre pays:</h2>
-        <p class="texte2"><a href="#">Portugal</a></p>
-        <p class="texte3"><a href="#">Canada</a></p>
-        <p class="texte4"><a href="#">Itali</a></p>
-    </div>
-    
-    <div class="footer1">
-        <h2 class="textee">Sur votre Mobile <br>ou tablette</h2>
-        <img  class="imge" src="../image/Icon awesome-facebook.png" style=" height: 43px;margin-top: 183px;margin-left: -213px;">
-        <img class="imge2" src="../image/Icon awesome-instagram.png" style=" height: 43px;margin-top: 183px;margin-left: 27px;">
-        <img class="imge3" src="../image/Icon awesome-linkedin.png" style="height: 43px; margin-top: 183px;margin-left:27px ;">
-        <img class="imge4" src="../image/Icon awesome-youtube.png" style="height: 43px; margin-top: 183px; margin-left: 27px;">
-        <h2 class="txtt">@All-right</h2>
+</head>
+
+<body >
+  <div id="header">
+    <div id="tete" style="background-color: gainsboro; width: 100%; height: 14%; position: absolute; ">
+      <div class="logo">
+        <a href="../html/gallerie.html"><img class="img" src="../image/logo.png"></a></div>
+
+      <div class="nav" id="NJE_btn1">
+        <ul>
+          <li><a href="../html/gallerie.html">Connexion</a></li>
+          <li><a href="../html/inscription.html">Carnet de Voyage</a></li>
+        
+
+
+        </ul>
       </div>
-    
-    
-    
-    
-    
+      <div class="NJE_icon_menu" id="NJE_btn1"><i class="fas fa-bars"></i></div>
+      <div class="NJE_icon_menu1" id="NJE_btn2"><i class="fas fa-times"></i></div>
+
+
+
+
+    </div>
+  </div>
+
+
+  <div class="page2">
+    <h2 class="bienvenue">Bienvenue</h2>
+    <h4 class="sous-titre">Connectez-vous à l’Espace Propriétaire</h4>
+
+
+    <div id="reservation">
+
+
+      <div class="input1">
+        <div class="image"> <img src="../image/image.jfif"></div>
+        <h2 class="inscrit">Inscription</h2>
+
+        <input id="Text1" name="Text1" type="text" placeholder=" votre nom">
+        <input id="Text2" name="Text2" type="text" placeholder="votre prénom">
+        <input id="ds" type="date" name="ds" placeholder="jj/mm/aa">
+
+        <li><select name="Civilité" id="civil" name="civil">
+            <option selected="" value="Default">Civilité</option>
+            <option value="AF">Australia</option>
+            <option value="AL">Canada</option>
+            <option value="DZ">India</option>
+            <option value="AS">Russia</option>
+            <option value="AD">USA</option>
+          </select></li>
+        <input id="email1" name="email" type="email" placeholder=" votre email">
+        <input id="pasword1" name="pasword1" type="password" placeholder=" votre mot de passe">
+        <!-- <input id="pasword2" name="pasword2" type="password" placeholder="confirmation du mot de passe"> -->
+
+        <input id="submit" type="submit" value="Envoyer" onclick="inscription()">
+        <p><a class="Connectez-vous" href="../html/connexion.html">Connectez-vous...</a></p>
+
+
+
+        x
+
+
+      </div>
+    </div>
+    <h2 class="parag">Découvrez Nos offres et forfait !!</h2>
+
+    <div class="forfait">
+      <div class="forfait1">
+        <img class="photo" src="../image/forfait.jpg">
+        <div class="middle">
+          <div class="parag1"> <a
+              href="https://www.sortiraparis.com/loisirs/guides/48559-saint-valentin-2020-a-paris-nos-bons-plans"
+              target="_blank">Nos forfait du Saint Valention!</a></div>
+
+        </div>
+
+      </div>
+      <div class="forfait2">
+        <img class="photo1" src="../image/forfait1.jpg">
+        <div class="middle1">
+          <div class="parag2"> <a href="https://www.officiel-des-vacances.com/top-10-destinations-soleil-en-hiver"
+              target="_blank">Nos forfait d'hiver au soleil!</a></div>
+
+        </div>
+      </div>
+
+      <div class="forfait5">
+        <img class="photo5" src="../image/13.jpg">
+        <div class="middle5">
+          <divc class="parag5"><a href="../html/inscription.html">Nos forfait pour reserver!</a>
+        </div>
+      </div>
     </div>
 
-    <script src="../js/jquery-3.4.1.slim.min.js"></script>
-    <script src="../js/jquery.min.js"></script>
-    <script type="text/javascript" src="../css/gallerie.js"></script>
-    <script src="../js/traitement.js"></script>
-    <script src="../js/reservation.js"></script>
-         </body>
-     </html>
+
+
+    <div class="forfait3">
+      <img class="photo2" src="../image/forfait2.png">
+      <div class="middle2">
+        <div class="parag3"> <a href="" target="_blank">Nos forfait d'été 2020!</a></div>
+
+      </div>
+
+    </div>
+    <div class="forfait4">
+      <img class="photo3" src="../image/forfait4.jpg">
+      <div class="middle3">
+        <div class="parag4"> <a href="" target="_blank">Nos forfait du printemps!</a></div>
+      </div>
+    </div>
+
+
+    <h3 class="offre">Offres Last Minute</h3>
+    <h5 class="offre1">Toujours avec la garantie des meilleurs prix !</h5>
+    <p class="offre2"> Chez Sunweb, vous trouverez toujours les meilleurs Last Minute au soleil !<br> Vous avez envie de
+      chaleur et de vitamine D ? Il vous suffit de chercher votre Last Minute idéal et de réserver <br>un séjour
+      comprenant le vol et l'hébergement. De plus, avec Sunweb, vous êtes assuré d'obtenir le prix le plus bas!<br> Vous
+      trouvez vos vacances moins chères ailleurs ? Nous vous remboursons la différence et vous accordons une
+      <br>réduction supplémentaire !
+      <br>Vous savez déjà où vous voulez aller ? Ou vous voudriez être inspiré ? Découvrez tous nos<br> last minutes et
+      trouvez vos vacances idéales.</p>
+    <button class="btnred">Tous les last minutes</button>
+
+
+
+    <div class="forfait6">
+      <img class="imagee" src="../image/12.jpg">
+      <div class="overlay">Quelle est votre destination Last Minute ? </div>
+
+    </div>
+  </div>
+
+
+
+
+
+  <div id="footer">
+    <h2 class="txt">HomeliDays</h2>
+
+    <div class="footer1">
+      <h2 class="txt2"> A propos</h2>
+      <p class="txt3"><a href="#">Qui somme nous!</a></p>
+      <p class="txt4"><a href="#">Offre d'emploi</a></p>
+      <p class="txt5"><a href="#">Géneral</a></p>
+    </div>
+
+    <div class="footer1">
+      <h2 class="text">Aide</h2>
+      <p class="text2"><a href="#">Contactez</a></p>
+      <p class="text3"><a href="#">Confidentialité</a></p>
+      <p class="text4"><a href="#">Condition</a></p>
+    </div>
+
+    <div class="footer1">
+      <h2 class="texte">Autre pays:</h2>
+      <p class="texte2"><a href="#">Portugal</a></p>
+      <p class="texte3"><a href="#">Canada</a></p>
+      <p class="texte4"><a href="#">Itali</a></p>
+    </div>
+
+    <div class="footer1">
+      <h2 class="textee">Sur votre Mobile <br>ou tablette</h2>
+      <img class="imge" src="../image/Icon awesome-facebook.png"
+        style=" height: 43px;margin-top: 183px;margin-left: -213px;">
+      <img class="imge2" src="../image/Icon awesome-instagram.png"
+        style=" height: 43px;margin-top: 183px;margin-left: 27px;">
+      <img class="imge3" src="../image/Icon awesome-linkedin.png"
+        style="height: 43px; margin-top: 183px;margin-left:27px ;">
+      <img class="imge4" src="../image/Icon awesome-youtube.png"
+        style="height: 43px; margin-top: 183px; margin-left: 27px;">
+      <h2 class="txtt">@All-right</h2>
+    </div>
+
+
+
+
+
+  </div>
+
+  <script src="../js/jquery-3.4.1.slim.min.js"></script>
+  <script src="../js/jquery.min.js"></script>
+  <script type="text/javascript" src="../js/gallerie.js"></script>
+  <script src="../js/traitement.js"></script>
+  <script src="../js/reservation.js"></script>
+</body>
+
+</html>

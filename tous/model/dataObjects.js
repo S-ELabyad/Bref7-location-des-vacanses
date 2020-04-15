@@ -1,28 +1,28 @@
 //
 class Client {
-    constructor(id, email, nom, dateNaissance, motDePass) {
+    constructor(id, email, nom, prenom, civil, dateNaissance, motDePass) {
         this.id = id;
-        this.email=email;
-        this.Text1 = Text1;
-        this.Text2 = Text2;
+        this.email = email;
+        this.nom = nom;
+        this.prenom = prenom;
         this.civil = civil;
-        this.ds = ds;
-        this.pasword1 = pasword1;
+        this.dateNaissance = dateNaissance;
+        this.pasword = motDePass;
     }
     // 
     // RETURN ATTRIBUTES DATA AS AN ARRAY
     getAll(type = 'object') {
         let returnData = {
             id: this.id,
-            email:this.email,
-            Text1: this.Text1,
-            Text2:this.Text2,
-            civil:this.civil,
-            ds: this.ds,
-            pasword1: this.pasword1
+            email: this.email,
+            nom: this.nom,
+            prenom: this.prenom,
+            civil: this.civil,
+            dateNaissance: this.dateNaissance,
+            pasword: this.motDePass
         }
         if (type != 'object')
-            returnData = [this.id, this.email, this.Text1, this.Text2, this.civil, this.ds, this.pasword1];
+            returnData = [this.id, this.email, this.nom, this.prenom, this.civil, this.dateNaissance, this.pasword];
         // 
         return returnData;
     }
@@ -30,11 +30,11 @@ class Client {
     getCred(type = 'object') {
         let returnData = {
             email: this.email,
-            pasword1: this.pasword1
+            pasword1: this.pasword
         }
         // 
         if (type != 'object')
-            returnData = [this.email, this.pasword1];
+            returnData = [this.email, this.pasword];
         // 
         return returnData;
     }
@@ -42,7 +42,7 @@ class Client {
     getId() {
         return this.id;
     }
-    getemail(){
+    getemail() {
         return this.email;
     }
     setId(id) {
@@ -51,7 +51,7 @@ class Client {
 }
 //
 class Produit {
-    constructor( id,nomProduit , prixProduit, imageProduit) {
+    constructor(id, nomProduit, prixProduit, imageProduit) {
         this.id = id;
         this.nom = nomProduit;
         this.prix = prixProduit;
@@ -80,7 +80,7 @@ class Produit {
 }
 //mazal makalmtu?
 class Reservation {
-    constructor(id, ID_produit , ID_client, duree, nbrPersonnes) {
+    constructor(id, ID_produit, ID_client, duree, nbrPersonnes) {
         this.id = id;
         this.ID_produit = ID_produit;
         this.ID_client = ID_client;
