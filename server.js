@@ -49,6 +49,7 @@ _APP.post('/jsonGetAllByEmail', async function (req, res) {
     let result = await _FUNCS.searchByEmail(req.body.email);
     res.end(JSON.stringify(result));
 });
+
 _APP.post('/jsonGetReservationAllById', async function (req, res) {
     let result = await _FUNCS.getAllReservationByIdClient(req.body.id);
     res.end(JSON.stringify(result));

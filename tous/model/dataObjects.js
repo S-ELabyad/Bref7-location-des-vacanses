@@ -108,6 +108,9 @@ class Reservation {
     getId() {
         return [this.id, this.id];
     }
+    getIdClient() {
+        return this.ID_client;
+    }
     setId(id) {
         this.id = id;
     }

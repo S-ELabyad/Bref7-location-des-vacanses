@@ -3,7 +3,7 @@
 <html >
     <head>
         <meta charset="UTF_8"/>
-        <link rel="stylesheet" href="../css/inscrip.css">
+        <link rel="stylesheet" href="../css/reserv.css">
         <title>HomeliDays</title>
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css">
         <link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet">
@@ -12,7 +12,8 @@
 
       
     </head>
-    <body  >
+    <body onload="afficherAllReservation()" >
+
         <div id="header">
         <div id="tete" style="background-color: gainsboro; width: 100%; height: 14%; position: absolute; ">
         <div class="logo">
@@ -37,99 +38,33 @@
         </div>
 
         <div id="b-content">
-            
+<!--      
+            <div class="b-card" id="cardBox-undefined">
+              <img class="b-card-img" src="../image/re1.jpg">
+              <p class="b-card-txt">res-11</p>
+              <select class="b-card-select">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+                <option value="10">10</option>
+
+              </select>
+              <button class="b-card-button_modifier">Modifier</button>
+              <button class="b-card-button_supprimer">Supprimer</button>
+
+            </div> -->
+
+
+
 
         </div>
 
-        <div id="page4">
-            <h2 class="registed">Reservation</h2>
-            <div class="Forfait">
-                    <div class="Forfait1">
-                      <img class="Photo" src="../image/re1.jpg">
-                      <div class="Middle">
-                        <button onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Reserver</button>
-                            
-                        </div>
-                    </div>
-
-                    <div class="Forfait2">
-                            <img class="Photo2" src="../image/re2.jpg">
-                            <div class="Middle2">
-                                <button onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Reserver</button>
-                              </div>
-                          </div>
-
-                    <div class="Forfait3">
-                             <img class="Photo3" src="../image/re3.jpg">
-                              <div class="Middle3">
-                                <button onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Reserver</button>
-                                  </div>
-                              </div>      
-                     
-                     
-                    <div class="Forfait4">
-                            <img class="Photo4" src="../image/re4.jpg">
-                             <div class="Middle4">
-                                <button onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Reserver</button>
-                                 </div>
-                             </div>   
-                             <div class="Forfait5">
-                                    <img class="Photo5" src="../image/re1.jpg">
-                                     <div class="Middle5">
-                                        <button onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Reserver</button>
-                                         </div>
-                                     </div>    
-                                     
-                                     <div class="Forfait6">
-                                            <img class="Photo6" src="../image/re4.jpg">
-                                             <div class="Middle6">
-                                                <button onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Reserver</button>
-                                                 </div>
-                                             </div>
-                                             
-                                             <div class="Forfait7">
-                                                <img class="Photo7" src="../image/re3.jpg">
-                                                 <div class="Middle7">
-                                                    <button onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Reserver</button>
-                                                     </div>
-                                                 </div>
-                                                 <div class="Forfait8">
-                                                    <img class="Photo8" src="../image/re2.jpg">
-                                                     <div class="Middle8">
-                                                        <button onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Reserver</button>
-                                                         </div>
-                                                     </div>
-
-                                                     <div class="Forfait9">
-                                                        <img class="Photo9" src="../image/reserv.jpg">
-                                                         <div class="Middle9">
-                                                            <button onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Reserver</button>
-                                                             </div>
-                                                         </div>
-                                                         
-                                                         <h3 class="Offre">Offres Last Minute</h3>
-                                                         <h5 class="Offre1">Toujours avec la garantie des meilleurs prix !</h5>
-                                                         <p class="Offre2"> Chez Sunweb, vous trouverez toujours les meilleurs Last Minute au soleil !<br> Vous avez envie de
-                                                     chaleur et de vitamine D ? Il vous suffit de chercher votre Last Minute idéal et de réserver <br>un séjour
-                                                           comprenant le vol et l'hébergement. De plus, avec Sunweb, vous êtes assuré d'obtenir le prix le plus bas!<br> Vous
-                                                           trouvez vos vacances moins chères ailleurs ? Nous vous remboursons la différence et vous accordons une
-                                                           <br>réduction supplémentaire !
-                                                           <br>Vous savez déjà où vous voulez aller ? Ou vous voudriez être inspiré ? Découvrez tous nos<br> last minutes et
-                                                           trouvez vos vacances idéales.</p>
-                                                         <button class="Btnred">Tous les last minutes</button>
-                                                     
-                                                     
-                                                     
-                                                         <div class="Forfait10">
-                                                             <img class="Imagee" src="../image/12.jpg">
-                                                             <div class="Overlay">Quelle est votre destination Last Minute ? </div>
-                                                       
-                                                         </div>
-                                                       </div>
-
-                          
-    
-                </div>  
                 
 
 
@@ -187,49 +122,13 @@
           
           
           
-             
 
-              <div id="id01" class="modal">
-                
-               
-                  <div class="imgcontainer">
-                    <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
-                    <img src="../image/re1.jpg" alt="Avatar" class="avatar">
-                  </div>
-              
-                  <div class="Container" >
-                    <input type="text" placeholder="Nom" id="name" required>
-                    <!-- <input type="text$" id="champ" placeholder="Enter Username" name="uname" required style="    width: 34%;height: 8%;margin-left: 140px;border-radius: 15px;font-style: italic;text-align: center; display: flex;margin-left: 264px;"> -->
-              
-                    <!-- <div id="date1">
-                      <input type="text" placeholder="JJ" id="JJ">
-                      <input type="text" placeholder="MM" id="MM">
-                      <input type="text" placeholder="YY" id="YY">
-                      </div> -->
-                      <input type="date" placeholder="JJ/MM/YY" id="YY" name="YY">
-                  <input type="text" placeholder="période de location" id="PeroideL" required>
-                  <input type="text" placeholder="Nombre Personne" id="NbrL" required>
-                   
-
-                   
-                      
-                  <button class="button type2" name="button type2" onclick="age();" > 
-                    <i class="fas fa-check"></i>&emsp;reservez
-                </button>
-                <button class="button type2" name="btn_annuler" onclick="annuler();" > 
-                    <i class="fas fa-check"></i>&emsp;Annuler
-                </button>
-                
-              
-                  
-                
-                </div>
 
             
 
                 <script src="../js/jquery-3.4.1.slim.min.js"></script>
                 <script src="../js/jquery.min.js"></script>
-                  <script type="text/javascript" src="../css/gallerie.js"></script>
+              <script src="../js/gallerie.js"></script>
                   <script src="../js/traitement.js"></script>
                   <script src="../js/reservation.js"></script>
           

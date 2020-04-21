@@ -91,7 +91,9 @@ async function addToReservation(data) {
     let succes = true;
     try {
         let jsonDataObject = await _FS.readJSON(FILE_PATH);
-        data.id = `res-${jsonDataObject.length + 1}`;
+        id=jsonDataObject[jsonDataObject.length-1].id;
+        data.id = `res-${Number(id.substring(4, id.length)) + 1}`
+        // data.id = `res-${jsonDataObject.length + 1}`;
         data = jsonToClass(data, "Reservation");
         //     
         //THE ADD THE WENTED DATA TO IT
@@ -116,7 +118,7 @@ function jsonToClass(objectData, className) {
             retClass = new dataObjects.Question(objectData.id, objectData.ID_produit, objectData.ID_client, objectData.duree, objectData.nbrPersonnes);
             break;
         case 'Produit':
-            retClass = new dataObjects.Produit(objectData.id, objectData.nom, objectData.prix, objectData.image);
+            retClass = new dataObjects.Produit(objectData.id, objectData.nom, objectData.prix);
             break;
         default:
             retClass = null;
@@ -135,32 +137,70 @@ async function searchByEmailAndPass(data) {
     _DATA.forEach(data_objet => {
         if(retValue == false)
         {
-            if (data_objet.getCred().email==data.email && data_objet.getCred().password1==data.password1){
+            if (data_objet.getCred().email==data.email && data_objet.getCred().password==data.password){
                 retValue = true;
             }
         }
     });
     return retValue;
 }
-async function searchByImage(image) {
-    const _DATA = await jsonGetAll("Produit");
-    let retValue = -1;
-    _DATA.forEach(data_objet => {
-            if (data_objet.getImage() == image)
-                retValue = data_objet.getId();
-            }
-    );
+
+async function getAllReservationByIdClient(id) {
+    const _DATA = await jsonGetAll("Reservation");
+    let retValue = [];
+    _DATA.forEach(data => {
+        if (data.getIdClient() == id)
+        {
+            retValue.push(data.getAll());
+        } 
+    });
     return retValue;
 }
-// 
-// 
+async function updateDuree(data) {
+    const FILE_PATH = _PATH.join(__dirname, '..', 'data', `Reservation.json`);
+    let retValue = true;
+    var Reservations = await jsonGetAll("Reservation");
+    if (Reservations != null) {
+        let dataObject = [];
+        for (let i = 0; i < Reservations.length; i++) {
+            dataObject.push(Reservations[i].getAll());
+            if (Reservations[i].getId() == data.id)
+            {
+                dataObject[i].duree=data.duree;
+            }
+        }
+        await _FS.writeJSON(FILE_PATH, dataObject);
+    } else retValue = false;
+    // 
+    return retValue;
+}
+
+async function deleteReservation(id) {
+    const FILE_PATH = _PATH.join(__dirname, '..', 'data', `Reservation.json`);
+    let retValue = true;
+    var Reservations = await jsonGetAll("Reservation");
+    if (Reservations != null) {
+        let dataObject = [];
+        for (let i = 0; i < Reservations.length; i++) {
+            if (Reservations[i].getId() !== id)
+            {
+                dataObject.push(Reservations[i].getAll());
+            }
+        }
+        await _FS.writeJSON(FILE_PATH, dataObject);
+    } else retValue = false;
+    // 
+    return retValue;
+}
 module.exports = {
     jsonGetAll,
     searchByEmail,
     addToClient,
     addToReservation,
     searchByEmailAndPass,
-    searchByImage
+    getAllReservationByIdClient,
+    updateDuree,
+    deleteReservation
 }
 
 

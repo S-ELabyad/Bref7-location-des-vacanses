@@ -5,9 +5,9 @@ function afficherAllReservation()
     }, (response) => {
         response=JSON.parse(response);
         $.post("/jsonGetReservationAllById", {
-            id:response.id
+            id:response.id,
         }, (response1) => {
-            const insription = JSON.parse(response1);
+            const reservation = JSON.parse(response1);
             reservation.forEach(element => {
                 $.post('/jsonGetImageById', {
                     id: Number(element.ID_produit),
