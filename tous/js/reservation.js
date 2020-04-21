@@ -4,8 +4,10 @@ function afficherAllReservation()
         email: sessionStorage.getItem("email"),
     }, (response) => {
         response=JSON.parse(response);
+        
+        console.log(response);
         $.post("/jsonGetReservationAllById", {
-            id:response.id,
+            id:response.id
         }, (response1) => {
             const reservation = JSON.parse(response1);
             reservation.forEach(element => {

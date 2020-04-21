@@ -19,7 +19,7 @@ class Client {
             prenom: this.prenom,
             civil: this.civil,
             dateNaissance: this.dateNaissance,
-            pasword: this.motDePass
+            pasword: this.pasword
         }
         if (type != 'object')
             returnData = [this.id, this.email, this.nom, this.prenom, this.civil, this.dateNaissance, this.pasword];

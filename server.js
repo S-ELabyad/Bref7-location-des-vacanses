@@ -33,6 +33,7 @@ _APP.get('/reservation', (req, res) => {
 // LISTEN FOR REQUESTES FROM THE CLIENT
 // REQUEST TO SAVE THE GIVEN DATA INTO THE JSON FILE
 _APP.post('/jsonSaveClient', async function (req, res) {
+    console.log(req.body.data);
     let result = await _FUNCS.addToClient(req.body.data);
     res.end(result.toString());
 });

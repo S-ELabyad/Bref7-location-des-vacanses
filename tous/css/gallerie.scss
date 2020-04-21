@@ -505,7 +505,7 @@ text-align: center;
 top: 24px;
 left: -5px;
 }
-& #name {
+& #email1 {
 
 position: relative;
 width: 68%;
@@ -518,7 +518,7 @@ top: 95px;
 text-align: center;
 font-size: 15px;
 }
-& #password {
+& #pasword1 {
 position: relative;
 width: 68%;
 height: 9%;
@@ -2155,12 +2155,12 @@ height: 175px;
     font-size: 21px;
     margin-left: 176px;
    }
-   & .input1 #name{
+   & .input1 #email1{
     width: 140%;
     height: 37px;
     margin-left: 35px;
    }
-   & .input1 #password {
+   & .input1 #pasword1 {
     width: 140%;
     height: 37px;
     margin-left: 35px;

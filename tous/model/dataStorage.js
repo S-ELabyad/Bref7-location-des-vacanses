@@ -112,7 +112,7 @@ function jsonToClass(objectData, className) {
     let retClass = null;
     switch (className) {
         case 'Client':
-            retClass = new dataObjects.Client(objectData.id, objectData.email, objectData.Text1,objectData.Text2,objectData.civil, objectData.ds, objectData.password1);
+            retClass = new dataObjects.Client(objectData.id, objectData.email, objectData.Text1,objectData.Text2,objectData.civil, objectData.ds, objectData.pasword1);
             break;
         case 'Reservation':
             retClass = new dataObjects.Question(objectData.id, objectData.ID_produit, objectData.ID_client, objectData.duree, objectData.nbrPersonnes);

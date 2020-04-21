@@ -518,7 +518,7 @@ body {
   left: -5px;
 }
 
-.page2 #validation .input1 #name {
+.page2 #validation .input1 #email1 {
   position: relative;
   width: 68%;
   height: 9%;
@@ -533,7 +533,7 @@ body {
   font-size: 15px;
 }
 
-.page2 #validation .input1 #password {
+.page2 #validation .input1 #pasword1 {
   position: relative;
   width: 68%;
   height: 9%;
@@ -2292,12 +2292,12 @@ form {
     font-size: 21px;
     margin-left: 176px;
   }
-  .page2 #validation .input1 #name {
+  .page2 #validation .input1 #email1 {
     width: 140%;
     height: 37px;
     margin-left: 35px;
   }
-  .page2 #validation .input1 #password {
+  .page2 #validation .input1 #pasword1 {
     width: 140%;
     height: 37px;
     margin-left: 35px;

@@ -89,12 +89,12 @@ function connection() {
     if (validemail(0) && validpassword(0)) {
         $.post('/jsonConnection', {
             data: {
-                email: $('#email').val(),
-                motPass: $('#password').val()
+                email:document.getElementById("email1").value,
+                motPass:document.getElementById("pasword1").value
             }
         }, (response) => {
             if (response !== "false") {
-
+                // sessionStorage.setItem('email', $('#email').val());
                 alert("email ou mot de passe est correct");
             } else {
                 alert("email ou mot de passe est incorrect");
@@ -113,7 +113,7 @@ function inscription() {
                 Text1: $('#Text1').val(),
                 Text2: $('#Text2').val(),
                 ds: $('#ds').val(),
-                pasword1: $('#pasword1').val(),
+                pasword1:document.getElementById("pasword1").value,
                 civil: document.getElementById('civil').options[document.getElementById('civil').selectedIndex].value
             }
         }, (response) => {
