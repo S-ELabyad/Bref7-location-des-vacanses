@@ -499,7 +499,7 @@ body {
 
 #b-content .b-card {
   width: 400px;
-  height: 400px;
+  height: 455px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -548,7 +548,7 @@ body {
 
 #b-content .b-card .b-card-button_supprimer {
   position: relative;
-  top: -40px;
+  top: -56px;
   left: 190px;
   background-color: #bac3c7;
 }

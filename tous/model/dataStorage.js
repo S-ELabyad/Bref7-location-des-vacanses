@@ -101,6 +101,7 @@ async function addToReservation(data) {
         //AFTER THAT I RESAVE THE JSON FILE
         await _FS.writeJSON(FILE_PATH, jsonDataObject);
     } catch (err) {
+        console.log(err);
         succes = false;
     }
     // 
@@ -115,7 +116,7 @@ function jsonToClass(objectData, className) {
             retClass = new dataObjects.Client(objectData.id, objectData.email, objectData.Text1,objectData.Text2,objectData.civil, objectData.ds, objectData.pasword1);
             break;
         case 'Reservation':
-            retClass = new dataObjects.Question(objectData.id, objectData.ID_produit, objectData.ID_client, objectData.duree, objectData.nbrPersonnes);
+            retClass = new dataObjects.Reservation(objectData.id, objectData.ID_produit, objectData.ID_client, objectData.duree, objectData.nbrPersonnes);
             break;
         case 'Produit':
             retClass = new dataObjects.Produit(objectData.id, objectData.nom, objectData.prix);

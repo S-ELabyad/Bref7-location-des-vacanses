@@ -4,29 +4,30 @@ function afficherAllReservation()
         email: sessionStorage.getItem("email"),
     }, (response) => {
         response=JSON.parse(response);
-        
+        console.log(response);
         console.log(response);
         $.post("/jsonGetReservationAllById", {
             id:response.id
         }, (response1) => {
             const reservation = JSON.parse(response1);
             reservation.forEach(element => {
-                $.post('/jsonGetImageById', {
-                    id: Number(element.ID_produit),
-                }, (response2) => {
-                    createCard(element, response2);
-                });
+                // $.post('/jsonGetImageById', {
+                    // id: Number(element.ID_produit),
+                // }, (response2) => {
+                    createCard(element, "response2");
+                // });
             });
         });
     });
     
 }
+
 function createCard(resrvation,image)
 {
     let cont = makeEelement('div', 'b-card');
     cont.id = `cardBox-${resrvation.index}`;
     let img = makeEelement('img', 'b-card-img');
-    img.src=image;
+    img.src="../image/re1.jpg";
     let txt_id=makeEelement('p', 'b-card-txt');
     txt_id.innerText = resrvation.id;
     let select=makeEelement('select', 'b-card-select');

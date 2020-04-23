@@ -93,8 +93,11 @@ function connection() {
                 motPass:document.getElementById("pasword1").value
             }
         }, (response) => {
-            if (response !== "false") {
-                // sessionStorage.setItem('email', $('#email').val());
+            if (response != "false") {
+
+
+                 sessionStorage.setItem('email', document.getElementById("email1").value);
+
                 alert("email ou mot de passe est correct");
             } else {
                 alert("email ou mot de passe est incorrect");
