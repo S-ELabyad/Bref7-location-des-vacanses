@@ -1011,24 +1011,22 @@ body {
 }
 
 .page2 .Offre {
-  position: relative;
-  top: -155px;
   text-align: center;
   font-style: italic;
   font-size: 33px;
+  margin-top: 54%;
   color: inherit;
 }
 
 .page2 .Offre1 {
-  position: relative;
   font-style: italic;
   font-size: 18px;
-  top: -124px;
+  margin-top: 36px;
   text-align: center;
 }
 
 .page2 .Offre2 {
-  position: relative;
+  margin-top: 80px;
   font-style: italic;
   top: -2px;
   left: 27px;
@@ -1823,24 +1821,22 @@ body {
 }
 
 #page4 .Offre {
-  position: relative;
-  top: -1188px;
   text-align: center;
   font-style: italic;
   font-size: 33px;
+  margin-top: 54%;
   color: inherit;
 }
 
 #page4 .Offre1 {
-  position: relative;
   font-style: italic;
   font-size: 18px;
-  top: -1135px;
+  margin-top: 36px;
   text-align: center;
 }
 
 #page4 .Offre2 {
-  position: relative;
+  margin-top: 80px;
   font-style: italic;
   top: -1000px;
   left: 27px;
@@ -1849,7 +1845,7 @@ body {
 }
 
 #page4 .Btnred {
-  position: relative;
+  margin-top: 61px;
   width: 18%;
   height: 10%;
   border-radius: 51px;
@@ -1869,11 +1865,9 @@ body {
 }
 
 #page4 .Forfait10 {
-  position: relative;
   width: 27%;
   max-width: 290px;
-  top: -1010px;
-  left: 55px;
+  margin-left: 42px;
 }
 
 #page4 .Imagee {
@@ -2193,7 +2187,7 @@ img.avatar {
     height: 120px;
   }
   #header #tete {
-    margin-left: -12px;
+    margin-left: 11px;
     margin-top: -10px;
   }
 }
@@ -2520,7 +2514,9 @@ img.avatar {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    margin-top: -75%;
+    position: absolute;
+    margin-top: 27%;
+    margin-left: 2%;
   }
   #page4 .Forfait10 .Imagee {
     position: absolute;
@@ -2536,27 +2532,30 @@ img.avatar {
   #page4 .Btnred {
     height: 53px;
     width: 147px;
-    margin-top: -107px;
+    position: absolute;
+    margin-top: 259%;
     font-size: 11px;
-    margin-left: 308px;
+    margin-left: 29%;
   }
   #page4 .Offre {
-    margin-top: 192%;
+    margin-top: 78%;
+    margin-left: 32%;
+    position: absolute;
     text-align: center;
   }
   #page4 .Offre1 {
-    margin-top: -15px;
     text-align: center;
+    position: absolute;
+    margin-top: 85%;
+    margin-left: 29%;
   }
   #page4 .Offre2 {
-    margin-top: -85px;
+    position: absolute;
     display: -webkit-box;
     display: -ms-flexbox;
-    display: flex;
+    margin-top: 250%;
+    margin-left: 7%;
     text-align: center;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
   }
   .modal {
     text-align: center;
